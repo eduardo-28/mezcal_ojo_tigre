@@ -1,0 +1,941 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 205px 20px 0;
+}
+body .container {
+  padding: 0.5em;
+}
+
+/*Header 1*/
+.header1 {
+  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  align-items: stretch;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  row-gap: 10px;
+
+  background-color: #fff;
+  height: 100px;
+  width: 100%;
+  padding: 0 20px 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+.header1 .item-logo {
+  border-right: groove;
+  width: 30%;
+  align-self: center;
+  display: flex;
+  align-content: initial;
+}
+.header1 .item-logo .logo {
+  width: 160px;
+  height: 80px;
+  display: block;
+  margin: auto;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.header1 .item-date {
+  border-right: groove;
+  width: 40%;
+  align-self: center;
+}
+.header1 .item-date .date {
+  display: flex;
+  justify-content: center;
+  font-size: 0.7em;
+}
+.header1 .item-date .header-label {
+  width: 280px;
+  height: 75px;
+  display: block;
+  margin: auto;
+  align-items: center;
+}
+.header1 .item-icon {
+  justify-content: center;
+  width: 20%;
+  align-self: center;
+  padding-left: 2rem;
+}
+.header1 .item-icon .icons1 {
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+.header1 .item-icon .icons2 {
+  display: flex;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+
+.space-icon {
+  padding: 0 10px;
+}
+
+/*header2*/
+
+.header2 {
+  background-color: #fff;
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  top: 100px;
+  left: 0;
+  z-index: 20;
+  margin: 0;
+  justify-content: start;
+  border-top: groove;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-start;
+  align-content: stretch;
+  max-width: 992px;
+  margin: 0;
+}
+
+.nav-link {
+  color: black !important;
+  text-decoration: none;
+}
+
+.nav-menu {
+  display: flex;
+  margin-right: 40px;
+  list-style: none;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.nav-menu-item {
+  font-size: 18px;
+
+  margin: 5px 10px 5px;
+  line-height: 30px;
+  text-transform: uppercase;
+  width: max-content;
+  border-right: groove;
+}
+
+.nav-menu-link {
+  padding: 8px 12px;
+  border-radius: 3px;
+}
+
+.nav-menu-link:hover {
+  background-color: gray;
+  transition: 0.5s;
+}
+
+.nav-toggle {
+  color: #525252;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  cursor: pointer;
+  margin-left: 20px;
+  display: none;
+}
+
+/**
+  * images
+  */
+.image {
+  width: 100%;
+}
+
+.image.full {
+  height: 100%;
+  padding: 0;
+  flex: 505;
+}
+.container-img {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.main-img {
+  width: 100%;
+  max-height: 400px;
+}
+.img-text {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Boton imagen*/
+
+.container-img a {
+  position: absolute;
+  bottom: 2em;
+  right: 2em;
+  border: solid;
+  border-radius: 0.2em;
+  border-color: rgb(131, 92, 33);
+  text-transform: uppercase;
+  color: white;
+  padding: 0.7em 0.8em;
+  text-decoration: none !important;
+}
+
+/*textos de imagen 2*/
+
+.container-img a.ver-mas {
+  font-weight: bold;
+  position: absolute;
+  bottom: 12em;
+  right: 50px;
+  border: none;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  color: chocolate;
+}
+
+.container-img .text-proceso {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: chocolate;
+  font-weight: bold;
+  border: chocolate;
+  border-bottom: solid;
+  text-transform: uppercase;
+}
+a:hover {
+  background-color: rgb(231, 227, 202);
+  cursor: pointer;
+  color: red;
+}
+
+/**
+  * Container concteleria
+  * */
+.container-cocteleria {
+  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-between;
+  align-items: stretch;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  row-gap: 10px;
+}
+
+.container-cocteleria .item {
+  border: groove;
+  border-color: rgb(184, 172, 127);
+  border-width: 3px;
+  padding: 12px;
+  width: 32%;
+}
+
+/*texto centrado de galleria 3 IMAGENES*/
+.container-cocteleria a {
+  position: relative;
+  bottom: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.container-cocteleria a:hover {
+  text-decoration: none;
+  color: chocolate;
+}
+
+/**
+  * Container image slogan
+  * */
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.text-center {
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+/**
+  * Container made drinks
+  */
+.container-made {
+  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-between;
+  align-items: stretch;
+  padding-top: 20px;
+  row-gap: 10px;
+}
+.container-made .item-1 {
+  width: 48%;
+}
+.container-made .item-2 {
+  width: 23%;
+  flex-direction: column;
+  display: flex;
+  row-gap: 20px;
+}
+
+/**
+  * Container drinks
+  */
+
+.container-drinks {
+  grid-template-columns: repeat(5, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  row-gap: 10px;
+}
+.container-drinks .item {
+  width: 19%;
+}
+
+/*
+* FOOTER
+* */
+
+footer {
+  background-color: white;
+  color: #bbb;
+  line-height: 1.5;
+}
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.footer-principal {
+  /* padding: 1.25rem 1.875rem; */
+  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: stretch;
+  gap: 10px;
+}
+
+.footer-principal .item1 {
+  padding: 1.25rem;
+  width: auto;
+  text-transform: uppercase;
+  align-self: center;
+}
+
+.footer-principal > div.border-footer {
+  border-left: groove;
+}
+footer .font-title {
+  color: black;
+  font-family: ’Merriweather’, serif;
+  font-size: 1.375rem;
+  padding-bottom: 0.625rem;
+}
+footer .font-terminos {
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.8rem;
+  padding-bottom: 0.805rem;
+}
+footer .font-form {
+  color: black;
+  font-family: ’Merriweather’, serif;
+  font-size: 0.8rem;
+  padding-bottom: 0.625rem;
+}
+
+form {
+  display: inline-block;
+  flex-wrap: wrap;
+}
+input[type="email"] {
+  border: 0.5;
+  padding: 8px 15px;
+  margin-top: 2px;
+}
+input[type="submit"] {
+  background-color: rgb(247, 119, 0);
+  color: white;
+  cursor: pointer;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+
+  margin-top: 20px;
+  text-transform: uppercase;
+
+}
+
+
+.img-footer {
+  width: 150px;
+}
+
+@media (min-width: 980px) and (max-width: 1200px) {
+  .container-cocteleria .item {
+    padding: 5px;
+    height: 250px;
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+
+  body .container {
+    padding: 0.1em;
+  }
+  .header1 .item-date .date {
+    font-size: 0.6em;
+  }
+  .header1 .item-date .header-label {
+    width: 250px;
+    height: 70px;
+  }
+  /*** Container concteleria * */
+  .container-cocteleria {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    row-gap: 10px;
+  }
+
+  .container-cocteleria .item {
+    padding: 5px;
+    height: 190px;
+  }
+
+  /*texto centrado de galleria 3 IMAGENES*/
+  .container-cocteleria a {
+    left: 20%;
+    font-size: 27px;
+  }
+  /** Container image slogan * */
+  .text-center {
+    font-size: 30px;
+  }
+
+  /*logotipo*/
+
+  .header1 .item-icon .item1 .item3 {
+    justify-content: center;
+    width: 5%;
+    align-self: center;
+  }
+  .header2 {
+    height: 90px;
+  }
+  /**   * Container drinks   */
+
+  .container-drinks {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container-drinks .item {
+    width: 49%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    padding-top: 110px;
+  }
+  body .container {
+    padding: 0.2em;
+  }
+
+  .header1 {
+    height: 80px;
+  }
+  .header2 {
+    background-color: #fff;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    top: 80px;
+    left: 0;
+    height: 60px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    list-style: none;
+    background-color: white;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    padding: 20px 0;
+
+    height: calc(100% - 70px);
+    overflow-y: auto;
+
+    left: 100%;
+    transition: left 0.3s;
+    z-index: 0;
+  }
+
+  .nav-menu-item {
+    line-height: 70px;
+    border:none;
+  }
+
+  .nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 3px;
+  }
+
+  .nav-menu-link:hover {
+    background: none;
+    color: black;
+  }
+  .nav-toggle {
+    display: block;
+    z-index: 10;
+  }
+
+  .nav-menu_visible {
+    left: 0;
+  }
+
+  .nav-toggle:focus:not(:focus-visible) {
+    outline: none;
+  }
+  .content {
+    background-color: rgb(136, 127, 255);
+    margin: 5px, auto;
+    padding: 26px;
+  }
+
+  .header1 .item-date .date {
+    font-size: 0.6em;
+  }
+  .header1 .item-date .header-label {
+    width: 200px;
+    height: 50px;
+  }
+  .space-icon {
+    padding: 0 6px;
+  }
+
+  .image-large {
+    padding: 0em 0em 0.2em 0em;
+  }
+  .main-img {
+    width: 100%;
+    min-width: 3rem;
+    max-height: 300px;
+    padding: 16px 0px 10px 0;
+  }
+
+  .text-slogan {
+    text-transform: uppercase;
+    color: white;
+  }
+
+  /*textos de imagen 2*/
+  .container-img .text-proceso {
+    font-size: 1.5em;
+  }
+
+  .container-img a.ver-mas {
+    font-size: 0.8em;
+    bottom: 10em;
+  }
+
+  /*** Container concteleria * */
+  .container-cocteleria {
+    grid-template-columns: repeat(1, 1fr);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    row-gap: 10px;
+  }
+
+  .container-cocteleria .item {
+    border-width: 2px;
+    padding: 0 12px 0 12px;
+    margin-top: 0;
+    width: 100%;
+    height: 300px;
+  }
+
+  /**
+  * Container image slogan
+  * */
+
+  .text-center {
+    font-size: 20px;
+  }
+
+  /**
+  * Container made drinks
+  */
+  .container-made {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container-made .item-1 {
+    width: 100%;
+  }
+  .container-made .item-2 {
+    width: 48%;
+    flex-direction: column;
+    display: flex;
+    row-gap: 20px;
+  }
+
+  /**
+  * Container drinks
+  */
+
+  .container-drinks {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container-drinks .item {
+    width: 49%;
+  }
+}
+
+@media (min-width: 380px) and (max-width: 480px) {
+
+  body {
+    padding-top: 120px;
+  }
+
+  .header1 {
+    height: 70px;
+  }
+  .header2 {
+    height: 50px;
+    top: 70px;
+    left: 0;
+  }
+  .header1 .item-logo {
+    width: 22%;
+  }
+  .header1 .item-date {
+    width: 38;
+  }
+
+  .header1 .item-date .date {
+    font-size: 0.4em;
+  }
+  .header1 .item-date .header-label {
+    width: 100px;
+    height: 50px;
+  }
+  .header1 .item-logo .logo {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+  }
+
+  .header1 .item-icon {
+    width: 37%;
+    align-self: center;
+    padding-left: 1rem;
+  }
+ 
+  
+  .space-icon {
+    padding: 0 5px;
+  }
+  .space-icon i{
+    width: 8px;
+    height: 8px;
+    margin-left: 5px;
+  }
+
+
+  /* Navbar*/
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    list-style: none;
+    background-color: white;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    padding: 20px 0;
+
+    height: calc(100% - 70px);
+    overflow-y: auto;
+
+    left: 100%;
+    transition: left 0.3s;
+    z-index: 0;
+  }
+
+  .nav-menu-item {
+    line-height: 70px;
+    border:none;
+  }
+
+  .nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 3px;
+  }
+
+  .nav-menu-link:hover {
+    background: none;
+    color: black;
+  }
+  .nav-toggle {
+    display: block;
+    z-index: 10;
+  }
+
+  .nav-menu_visible {
+    left: 0;
+  }
+
+  .nav-toggle:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  /**/
+
+  .space-icon {
+    padding: 0 5px;
+  }
+  /* Boton imagen*/
+  .container-img {
+    padding-top: 10px;
+  }
+  .container-img a {
+    font-size: 0.6em;
+  }
+
+  /*** Container concteleria * */
+  .container-cocteleria {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    row-gap: 10px;
+  }
+
+  .container-cocteleria .item {
+    border-width: 2px;
+    padding: 20px 12px 0 12px;
+    margin-top: 0;
+    width: 100%;
+    height: 90%;
+  }
+  /*texto centrado de galleria 3 IMAGENES*/
+  .container-cocteleria a {
+    left: 20%;
+    font-size: 27px;
+  }
+
+  /**
+  * Container image slogan
+  * */
+
+  .text-center {
+    font-size: 10px;
+  }
+
+  /**
+    * Container drinks
+    */
+
+  .container-drinks {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .container-drinks .item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 379px) {
+  body {
+    padding-top: 110px;
+  }
+
+  .header1 {
+    height: 60px;
+  }
+  .header2 {
+    height: 50px;
+    top: 60px;
+    left: 0;
+  }
+  .header1 .item-logo {
+    width: 22%;
+  }
+  .header1 .item-date {
+    width: 38;
+  }
+
+  .header1 .item-date .date {
+    font-size: 0.4em;
+  }
+  .header1 .item-date .header-label {
+    width: 80px;
+    height: 50px;
+  }
+  .header1 .item-logo .logo {
+    width: 50px;
+    height: 60px;
+    padding: 0;
+  }
+
+  .header1 .item-icon {
+    justify-content: center;
+    width: 37%;
+    align-self: center;
+    padding-left: 1rem;
+  }
+ 
+  
+  .space-icon {
+    padding: 0 4px;
+  }
+  .space-icon i{
+    width: 8px;
+    height: 8px;
+    margin-left: 5px;
+  }
+  /* Navbar*/
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    list-style: none;
+    background-color: white;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    padding: 20px 0;
+    height: calc(100% - 70px);
+    overflow-y: auto;
+    left: 100%;
+    transition: left 0.3s;
+    z-index: 0;
+  }
+
+  .nav-menu-item {
+    line-height: 70px;
+    border:none;
+    padding-top: 0;
+  }
+
+  .nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 3px;
+  }
+
+  .nav-menu-link:hover {
+    background: none;
+    color: black;
+  }
+  .nav-toggle {
+    display: block;
+    z-index: 10;
+  }
+
+  .nav-menu_visible {
+    left: 0;
+  }
+
+  .nav-toggle:focus:not(:focus-visible) {
+    outline: none;
+  }
+  /*end navbar*/
+
+  /* Boton imagen*/
+  .container-img {
+    padding-top: 10px;
+  }
+  .container-img a {
+    font-size: 0.6em;
+  }
+  .container-img a.ver-mas {
+    bottom: 6em;
+    right: 10px;
+  }
+  .container-img .text-proceso {
+    font-size: 20px;
+  }
+
+  /*** Container concteleria * */
+  .container-cocteleria {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    row-gap: 10px;
+  }
+
+  .container-cocteleria .item {
+    border-width: 2px;
+    padding: 20px 12px 0 12px;
+    margin-top: 0;
+    width: 100%;
+    height: 85%;
+  }
+  /*texto centrado de galleria 3 IMAGENES*/
+  .container-cocteleria a {
+    left: 20%;
+    font-size: 22px;
+  }
+
+  /**
+  * Container image slogan
+  * */
+
+  .text-center {
+    font-size: 10px;
+  }
+
+  /**
+    * Container drinks
+    */
+
+  .container-drinks {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .container-drinks .item {
+    width: 100%;
+  }
+}
